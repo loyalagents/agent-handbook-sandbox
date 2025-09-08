@@ -20,16 +20,6 @@ export interface Trace {
   createdAt: Date;
 }
 
-export interface Interaction {
-  id: string;
-  name: string;
-  traceIds: string[];
-  spanIds: string[];
-  traces: Record<string, Trace>;
-  spans: Record<string, Span>;
-  createdAt: Date;
-}
-
 export interface ScenarioData {
   id: string;
   name: string;

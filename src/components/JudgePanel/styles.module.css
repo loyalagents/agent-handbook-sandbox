@@ -8,6 +8,10 @@
   flex: 1;
 }
 
+.judge-panel:focus-visible {
+  outline: none;
+}
+
 .judgment-input {
   margin-bottom: 1rem;
 }

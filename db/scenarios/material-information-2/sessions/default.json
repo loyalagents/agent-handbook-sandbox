@@ -2,7 +2,7 @@
   "id": "default",
   "name": "Default",
   "slug": "default",
-  "traceIds": ["t1", "t2", "t3", "t4", "t5"],
+  "traceIds": ["t1", "t2", "t3", "t4"],
   "traces": {
     "t1": {
       "id": "t1",
@@ -110,18 +110,6 @@
     },
     "t4": {
       "id": "t4",
-      "parentId": null,
-      "timestamp": "2025-08-20T10:16:00.000Z",
-      "messages": [
-        {
-          "role": "judge",
-		  "judgmentId": "j2",
-          "content": "Whoa!"
-        }
-      ]
-    },
-    "t5": {
-      "id": "t5",
       "parentId": null,
       "timestamp": "2025-08-20T10:16:00.000Z",
       "messages": [

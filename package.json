@@ -26,7 +26,7 @@
     "@radix-ui/react-toggle-group": "^1.1.11",
     "ai": "^5.0.5",
     "dedent": "^1.6.0",
-    "next": "15.4.5",
+    "next": "^15.5.2",
     "react": "19.1.0",
     "react-dom": "19.1.0",
     "react-intersection-observer": "^9.16.0",

@@ -40,6 +40,7 @@ const SessionPage: React.FC<SessionPageProps> = ({ session, scenario }) => {
     session,
     scenario,
     roles: ["user", "assistant", "tool", "judge"],
+    judgmentRiskLevels: ["high", "critical"],
   });
 
   return (
@@ -96,7 +97,7 @@ const SessionPage: React.FC<SessionPageProps> = ({ session, scenario }) => {
         />
         {activeJudgment && (
           <SideModal open={true} onClose={() => setActiveJudgment(undefined)}>
-            <JudgePanel session={session} judgment={activeJudgment} />
+            <JudgePanel session={session} judgment={activeJudgment} onClose={() => setActiveJudgment(undefined)} />
           </SideModal>
         )}
       </div>

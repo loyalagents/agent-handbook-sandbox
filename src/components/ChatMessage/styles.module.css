@@ -26,6 +26,10 @@
 	margin-right: 3.5rem;
 }
 
+.message.judge .message-actions {
+	margin-top: 0.5rem;
+}
+
 .message.judge .message-actions a {
 	cursor: pointer;
 	text-decoration: underline;
