@@ -52,7 +52,7 @@ export class SessionTracer {
   private getOutFile() {
     const startedAt = new Date();
     const formattedStartedAt = formatSessionStart(startedAt);
-    const outDir = `./db/sessions/${this.sessionNameSlug}/${formattedStartedAt}_${this.sessionId}`;
+    const outDir = `./db/session-traces/${this.sessionNameSlug}/${formattedStartedAt}_${this.sessionId}`;
     const outPath = `${outDir}/spans.jsonl`;
     return outPath;
   }

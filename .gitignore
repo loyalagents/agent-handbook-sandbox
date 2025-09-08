@@ -42,3 +42,9 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# session traces
+db/session-traces/*
+!db/session-traces/.gitkeep
+
+
