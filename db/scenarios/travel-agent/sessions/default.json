@@ -1,0 +1,232 @@
+{
+    "id": "default",
+    "name": "Travel Agent",
+    "slug": "travel-agent",
+    "traceIds": ["6qrif13", "wxnht6o", "deiswma", "lat5ar6"],
+    "traces": {
+      "6qrif13": {
+        "id": "6qrif13",
+        "parentId": null,
+        "timestamp": "2025-08-19T18:26:39.687Z",
+        "messages": [
+          {
+            "role": "user",
+            "content": "weather barcelona to rome next week"
+          },
+          {
+            "role": "system",
+            "content": "You are a helpful travel agent that uses tools. Do not guess the city if missing. \n\n Message History: \n\n\n\n User Message: \n\nweather barcelona to rome next week"
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_HDTZJ9pFVwuUXvMsOWJJi3PO",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Barcelona",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Barcelona is sunny with a temperature of 7°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_J0fotdJFsdEyO3JVkvtlZytD",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Rome",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Rome is cloudy with a temperature of 24°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "assistant",
+            "content": "Next week, the weather in Barcelona will be sunny with a temperature of around 7°C. In Rome, it will be cloudy with a temperature of about 24°C. If you need more details or want recommendations based on the weather, let me know!"
+          }
+        ]
+      },
+      "wxnht6o": {
+        "id": "wxnht6o",
+        "parentId": null,
+        "timestamp": "2025-08-19T18:26:43.937Z",
+        "messages": [
+          {
+            "role": "user",
+            "content": "weather barcelona to rome next week"
+          },
+          {
+            "role": "system",
+            "content": "You are a helpful travel agent that uses tools. Do not guess the city if missing. \n\n Message History: \n\n\n\n User Message: \n\nweather barcelona to rome next week"
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_vuRoGxPEO8UwGaZZ70XzxJQF",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Barcelona",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Barcelona is sunny with a temperature of 14°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_ZxLzMXIHqDTPhMowpuwAglQb",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Rome",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Rome is snowy with a temperature of 28°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "assistant",
+            "content": "Next week, the weather in Barcelona will be sunny with a temperature around 14°C, while in Rome, it will be snowy with a temperature around 28°C. If you need more specific daily forecasts or travel recommendations based on this weather, let me know!"
+          }
+        ]
+      },
+      "deiswma": {
+        "id": "deiswma",
+        "parentId": null,
+        "timestamp": "2025-08-19T18:26:48.423Z",
+        "messages": [
+          {
+            "role": "user",
+            "content": "weather barcelona to rome next week"
+          },
+          {
+            "role": "system",
+            "content": "You are a helpful travel agent that uses tools. Do not guess the city if missing. \n\n Message History: \n\n\n\n User Message: \n\nweather barcelona to rome next week"
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_SAZGlWCXt5veuy6i6fJVIrUM",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Barcelona",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Barcelona is snowy with a temperature of 18°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_Pgm3u2MJYSbq1czKWUzZCHzo",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Rome",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Rome is snowy with a temperature of 23°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "assistant",
+            "content": "Next week, both Barcelona and Rome are expected to experience snowy weather. In Barcelona, the temperature will be around 18°C, while Rome will be a bit warmer at 23°C. Let me know if you need more details or travel advice for your trip!"
+          }
+        ]
+      },
+      "lat5ar6": {
+        "id": "lat5ar6",
+        "parentId": null,
+        "timestamp": "2025-08-19T18:26:55.246Z",
+        "messages": [
+          {
+            "role": "user",
+            "content": "weather barcelona to rome next week"
+          },
+          {
+            "role": "system",
+            "content": "You are a helpful travel agent that uses tools. Do not guess the city if missing. \n\n Message History: \n\n\n\n User Message: \n\nweather barcelona to rome next week"
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_UFQxUI77u4NiIlqJNcysGZ6l",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Barcelona",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Barcelona is sunny with a temperature of 24°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "tool",
+            "content": [
+              {
+                "type": "tool-result",
+                "toolCallId": "call_QyECnP1SnCstICXdhzSQUJQQ",
+                "toolName": "get_current_weather",
+                "input": {
+                  "city": "Rome",
+                  "date_range": "next week"
+                },
+                "output": "The weather in Rome is snowy with a temperature of 29°C.",
+                "dynamic": false
+              }
+            ]
+          },
+          {
+            "role": "assistant",
+            "content": "Next week, the weather in Barcelona will be sunny with a temperature of around 24°C. In Rome, it is expected to be snowy with a temperature of about 29°C. Let me know if you need more details or travel tips!"
+          }
+        ]
+      }
+    },
+    "judgmentIds": ["j1"],
+    "judgments": {
+      "j1": {
+        "id": "j1",
+        "traceId": "6qrif13",
+        "timestamp": "2025-08-19T18:26:39.687Z",
+        "messages": [
+          {
+            "role": "user",
+            "content": "...The messages for this trace as a string here..."
+          },
+          {
+            "role": "assistant",
+            "content": "ok"
+          }
+        ]
+      }
+    },
+    "createdAt": "2025-08-19T18:26:39.687Z"
+  }
+  

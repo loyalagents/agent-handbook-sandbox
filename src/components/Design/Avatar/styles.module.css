@@ -1,0 +1,22 @@
+.avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  background: var(--body-background-light);
+  border-radius: 100%;
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  text-transform: uppercase;
+}
+
+.assistant, .tool {
+  background: var(--body-background-dark);
+  color: var(--body-color-dark);
+}
+
+.judge {
+  background: var(--green-400);
+  color: white;
+}

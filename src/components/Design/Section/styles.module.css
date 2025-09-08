@@ -1,0 +1,33 @@
+.section-header {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  border-bottom: 1px solid var(--primary-color-lighter);
+  margin: 0;
+}
+
+.section-header-content {
+  flex: 1;
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.section-header-actions {
+}
+
+.section-footer {
+  display: flex;
+  align-items: center;
+  color: var(--primary-color);
+  border-top: 1px solid var(--primary-color-lighter);
+  margin: 0;
+  padding-top: 0.75rem;
+}
+
+.section-footer-content {
+  flex: 1;
+}
+
+.section-footer-actions {
+}

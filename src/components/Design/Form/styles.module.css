@@ -1,0 +1,66 @@
+.form-field {
+  all: unset;
+  margin-bottom: 1rem;
+}
+
+.form-control {
+  margin-bottom: 1rem;
+}
+.form-label {
+  font-size: var(--font-size-small);
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+.form-control textarea {
+  padding: 0.5rem;
+  font-size: var(--font-size-small);
+  padding-top: 0.4rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  font-family: var(--font-system);
+  resize: vertical;
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-small);
+  background: var(--body-background);
+  outline: none;
+  color: var(--body-color);
+}
+
+.form-control textarea:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+
+.form-control input[type='text'] {
+  height: 2rem;
+  padding-left: 0.5rem;
+  width: 100%;
+  border: 1px solid var(--border-color-light);
+  border-radius: var(--border-radius-small);
+  font-size: var(--font-size-small);
+  background: var(--body-background);
+  color: var(--body-color);
+}
+
+.form-control input[type='text']:focus {
+  border: 1px solid var(--primary-color);
+  outline: none;
+}
+
+.form-message {
+  color: var(--body-color);
+  font-size: var(--font-size-small);
+  font-weight: 400;
+}
+
+.form-message.error {
+  color: var(--danger-color);
+}
+
+.form-group {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}

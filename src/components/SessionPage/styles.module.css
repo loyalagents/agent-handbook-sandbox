@@ -1,0 +1,40 @@
+.session-page {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  border-bottom: 1px solid var(--border-color-light);
+}
+
+.navigation-controls {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.trace-counter {
+  font-size: 0.875rem;
+  color: var(--text-color-secondary);
+  font-weight: 500;
+}
+
+.navigation-buttons {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+}
+
+.container {
+  height: calc(100vh - 4rem);
+  display: flex;
+  flex-direction: row;
+  gap: 1px;
+  background-color: var(--border-color-light);
+}

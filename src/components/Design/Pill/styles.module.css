@@ -1,0 +1,26 @@
+.pill {
+	font-size: var(--font-size-smaller);
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 4px;
+	display: inline-flex;
+}
+
+.pill.info {
+	background-color: var(--body-background-light);
+}
+
+.pill.success {
+	background-color: var(--success-background);
+	color: var(--success-color-dark);
+}
+
+.pill.warning {
+	background-color: var(--warning-background);
+	color: var(--warning-color-dark);
+}
+
+.pill.danger {
+	background-color: var(--danger-background);
+	color: var(--danger-color);
+}

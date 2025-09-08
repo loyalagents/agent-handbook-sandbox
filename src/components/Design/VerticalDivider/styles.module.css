@@ -1,0 +1,8 @@
+.vertical-divider {
+  height: 1rem;
+  width: 1px;
+  background: var(--border-color-light);
+  display: inline-block;
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}

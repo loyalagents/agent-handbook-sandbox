@@ -1,0 +1,340 @@
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-Regular.ttf');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-RegularItalic.ttf');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-Semibold.ttf');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-SemiboldItalic.ttf');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-Bold.ttf');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-BoldItalic.ttf');
+  font-weight: 600;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-Black.ttf');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Averta';
+  src: url('/fonts/CR-Averta-BlackItalic.ttf');
+  font-weight: 700;
+  font-style: italic;
+}
+
+:root {
+  --font-mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+    Liberation Mono, Courier New, monospace;
+  --font-system: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+    Segoe UI, Roboto, Helvetica Neue, Arial, Noto Sans, sans-serif,
+    Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol, Noto Color Emoji;
+  --font-family: 'Averta';
+  --body-background: #ffffff;
+  --body-background-light: #f0f0f0;
+  --body-background-lighter: rgba(250, 250, 250, 1);
+  --body-background-lightest: rgba(254, 254, 254, 1);
+  --body-background-dark: rgba(0, 0, 0, .9);
+  --body-color: #000000;
+  --body-color-light: #888;
+  --body-color-muted: #6c757d;
+  --body-color-dark: #ffffff;
+  --border-color: #cecece;
+  --border-color-light: #e5e5e5;
+
+  --link-color: #0000EE;
+
+  --mark-background: hsl(300, 95%, 87%);
+  --black: hsl(182, 2%, 0%);
+  --gray-100: hsl(182, 2%, 25%);
+  --gray-200: hsl(182, 2%, 35%);
+  --gray-300: hsl(182, 2%, 56%);
+  --gray-400: hsl(182, 2%, 77%);
+  --gray-500: hsl(182, 1%, 87%);
+  --gray-600: hsl(182, 1%, 93%);
+  --gray-700: hsl(182, 1%, 96%);
+  --white: hsl(182, 2%, 100%);
+
+  --yellow-100: hsl(49, 100%, 20%);
+  --yellow-200: hsl(49, 95%, 25%);
+  --yellow-300: hsl(49, 90%, 35%);
+  --yellow-400: hsl(49, 90%, 50%);
+  --yellow-500: hsl(49, 90%, 65%);
+  --yellow-600: hsl(49, 90%, 77%);
+  --yellow-700: hsl(49, 85%, 85%);
+
+  --brick-100: hsl(0, 85%, 15%);
+  --brick-200: hsl(0, 85%, 25%);
+  --brick-300: hsl(0, 85%, 35%);
+  --brick-400: hsl(0, 75%, 55%);
+  --brick-500: hsl(0, 75%, 60%);
+  --brick-600: hsl(0, 60%, 82%);
+  --brick-700: hsl(0, 60%, 92%);
+
+  --green-100: hsl(147, 100%, 10%);
+  --green-200: hsl(147, 100%, 17%);
+  --green-300: hsl(147, 100%, 25%);
+  --green-400: hsl(147, 100%, 32%);
+  --green-500: hsl(147, 75%, 45%);
+  --green-600: hsl(147, 60%, 55%);
+  --green-700: hsl(147, 50%, 88%);
+
+  --blue-100: hsl(240, 100%, 15%);
+  --blue-200: hsl(240, 100%, 25%);
+  --blue-300: hsl(240, 100%, 35%);
+  --blue-400: hsl(240, 100%, 55%);
+  --blue-500: hsl(240, 85%, 65%);
+  --blue-600: hsl(240, 75%, 82%);
+  --blue-700: hsl(240, 65%, 92%);
+
+  --primary-color-darkest: var(--green-100);
+  --primary-color-darker: var(--green-200);
+  --primary-color-dark: var(--green-300);
+  --primary-color: var(--green-400);
+  --primary-color-light: var(--green-500);
+  --primary-color-lighter: var(--green-600);
+  --primary-color-lightest: var(--green-700);
+
+  --warning-color-darkest: var(--yellow-100);
+  --warning-color-darker: var(--yellow-200);
+  --warning-color-dark: var(--yellow-300);
+  --warning-color: var(--yellow-400);
+  --warning-color-light: var(--yellow-500);
+  --warning-color-lighter: var(--yellow-600);
+  --warning-color-lightest: var(--yellow-700);
+
+  --progress-bar-1: var(--gray-400);
+  --progress-bar-2: var(--gray-300);
+  --progress-bar-3: var(--gray-200);
+  --progress-bar-4: var(--gray-100);
+  --progress-bar-5: var(--black);
+  --progress-bar-6: var(--black);
+
+  --warning-background: var(--yellow-700);
+  --warning-color: var(--yellow-500);
+
+  --success-background: var(--green-700);
+  --success-color: var(--green-500);
+  --success-color-dark: var(--green-400);
+
+  --danger-background: var(--brick-700);
+  --danger-color: var(--brick-400);
+  --danger-color-light: var(--brick-500);
+
+  --modal-background: rgba(255, 255, 255, 0.5);
+
+  --checkbox-background: var(--body-background-light);
+  --border-radius: 0.5rem;
+  --border-radius-small: 4px;
+  --font-size-larger: 1.5rem;
+  --font-size-large: 1.25rem;
+  --font-size-small: 0.875rem;
+  --font-size-smaller: 0.75rem;
+  --font-size-smallest: 0.675rem;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --body-background: #000000;
+    --body-background-light: #1c1c1c;
+    --body-background-lighter: rgba(5, 5, 5, 1);
+    --body-background-lightest: rgba(1, 1, 1, 1);
+    --body-background-dark: rgba(255, 255, 255, .8);
+    --body-color: #ffffff;
+    --body-color-light: #aaa;
+    --body-color-dark: #1c1c1c;
+    --border-color: #999999;
+    --border-color-light: #444;
+    --mark-background: hsl(300, 65%, 60%);
+    --danger-color: red;
+    --success-color: var(--green-500);
+    --warning-background: var(--yellow-200);
+    --warning-color: var(--yellow-500);
+    --danger-background: var(--brick-700);
+    --danger-color: var(--brick-400);
+    --danger-color-light: var(--brick-500);
+    --success-background: var(--green-700);
+    --success-color: var(--green-500);
+
+    --link-color: #3f84e4;
+
+    --modal-background: rgba(0, 0, 0, 0.55);
+
+    --primary-color-darkest: var(--green-700);
+    --primary-color-darker: var(--green-700);
+    --primary-color-dark: var(--green-600);
+    --primary-color: var(--green-500);
+    --primary-color-light: var(--green-500);
+    --primary-color-lighter: var(--green-300);
+    --primary-color-lightest: var(--green-200);
+
+    --warning-color-darkest: var(--yellow-700);
+    --warning-color-darker: var(--yellow-700);
+    --warning-color-dark: var(--yellow-600);
+    --warning-color: var(--yellow-500);
+    --warning-color-light: var(--yellow-500);
+    --warning-color-lighter: var(--yellow-300);
+    --warning-color-lightest: var(--yellow-200);
+  }
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overscroll-behavior: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: var(--font-family);
+  /* overflow-x: hidden; */
+}
+
+body {
+  color: var(--body-color);
+  background: var(--body-background);
+
+}
+
+a {
+  color: var(--link-color);
+}
+
+a:focus, a:hover, a:visited {
+  color: var(--link-color);
+}
+
+strong {
+  font-weight: 600;
+}
+
+p {
+  margin-bottom: 1rem;
+  margin-top: 0;
+}
+
+p:last-child {
+  margin-bottom: 0;
+}
+
+ul, ol {
+  margin-bottom: 1rem;
+  margin-top: 0;
+  padding-left: 1rem;
+}
+
+li {
+  margin-bottom: 0.5rem;
+}
+
+h1 {
+  font-size: var(--font-size-larger);
+  margin-bottom: 1rem;
+}
+
+.search-bar-input,
+.search-bar-input-focus {
+  padding: 0 3rem !important;
+  height: 2.75rem !important;
+  border-radius: 5rem !important;
+  margin: 0 !important;
+}
+
+.search-bar-input-focus {
+  border-color: transparent !important;
+}
+
+.search-bar-cancel-button {
+  display: none !important;
+}
+
+.search-bar-clear-button {
+  all: unset !important;
+  position: absolute !important;
+  right: 1rem !important;
+  top: 0.68rem !important;
+  font-family: sans-serif;
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-left: 0.35rem !important;
+  padding-right: 0.35rem !important;
+  height: 1.25rem !important;
+  border-radius: var(--border-radius-small) !important;
+  display: inline-flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  box-shadow: none !important;
+  border: 1px solid #e5e5e5 !important;
+  color: #888 !important;
+  font-size: var(--font-size-smaller) !important;
+}
+
+.search-bar-listbox {
+  margin-top: 0.5rem !important;
+  background: var(--body-background) !important;
+  border-radius: var(--border-radius-small) !important;
+  border: 1px solid var(--border-color-light) !important;
+  width: 100%;
+  padding-top: 0.25rem;
+  padding-bottom: 0.25rem;
+  box-shadow: hsl(206 22% 7% / 35%) 0px 10px 38px -10px,
+    hsl(206 22% 7% / 20%) 0px 10px 20px -15px;
+}
+
+.search-bar-group-heading {
+  font-size: var(--font-size-smallest) !important;
+  color: var(--body-color-light) !important;
+  padding: 0.5rem 1rem !important;
+  font-weight: 600 !important;
+  text-transform: uppercase !important;
+  letter-spacing: 0.025rem !important;
+}
+
+.search-bar-item,
+.search-bar-highlighted-item {
+  padding: 0.5rem 1rem !important;
+  font-size: var(--font-size-small) !important;
+  color: var(--body-color) !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: space-between !important;
+}
+
+.search-bar-highlighted-item {
+  background: var(--body-background-light) !important;
+}

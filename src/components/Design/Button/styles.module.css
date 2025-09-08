@@ -1,0 +1,222 @@
+.icon-button {
+  all: unset;
+  width: 1.875rem;
+  height: 1.875rem;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  position: relative;
+  border-radius: var(--border-radius-small);
+  border: 1px solid transparent;
+}
+
+.icon-button > div > div {
+  height: 15px;
+}
+
+
+.icon-button:hover {
+  background-color: var(--body-background-light);
+}
+.icon-button.active {
+  background-color: var(--body-background-light) !important;
+  border: 1px solid var(--border-color-light) !important;
+}
+
+.icon-button.default {
+  background-color: var(--body-background-light);
+}
+
+
+.button {
+  all: unset;
+  font-family: var(--font-system);
+  font-weight: 400;
+  font-size: 0.8rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+  height: 1.75rem;
+  border-radius: var(--border-radius-small);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: none;
+  border: 1px solid transparent;
+  position: relative;
+}
+
+
+.content-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loader-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content-loading {
+  opacity: 0;
+}
+
+.button.medium {
+  padding-left: 1rem;
+  padding-right: 1rem;
+  height: 2rem;
+}
+
+.button.small {
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  height: 1.5rem;
+  font-size: var(--font-size-smaller);
+}
+
+.button a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.button.active {
+  background-color: var(--primary-color-lightest) !important;
+  border: 1px solid var(--primary-color-lighter) !important;
+}
+
+.button[disabled] {
+  pointer-events: none;
+  opacity: 0.75;
+}
+
+.start-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 0.5rem;
+}
+
+.end-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0.25rem;
+  margin-right: -0.35rem;
+}
+
+.loader {
+  height: 1rem;
+  width: 1rem;
+  transform-origin: center;
+  animation: rotate 1s infinite linear;
+  will-change: transform;
+}
+
+.loader svg {
+  height: 1rem;
+  width: 1rem;
+}
+
+.button.default {
+  color: var(--body-color);
+  background-color: var(--body-background-light);
+  border: 1px solid var(--body-background-light);
+}
+.button.default:hover {
+  background-color: var(--body-background);
+}
+
+.button.outline {
+  color: var(--body-color);
+  border: 1px solid var(--border-color-light);
+  border-radius: 1rem;
+  font-size: var(--font-size-smaller);
+  font-weight: 400;
+}
+.button.outline:hover {
+  border: 1px solid var(--border-color-light);
+  background-color: var(--body-background-light);
+}
+
+.button.danger {
+  background-color: var(--danger-color);
+  border: 1px solid var(--danger-color);
+  color: white;
+}
+.button.danger:hover {
+  background-color: var(--danger-color-light);
+  border: 1px solid var(--danger-color-light);
+}
+
+.button.warning {
+  background-color: var(--warning-color-lightest);
+  border: 1px solid var(--warning-color-light);
+  color: var(--warning-color-darkest);
+}
+.button.warning:hover {
+  background-color: var(--warning-color-lighter);
+  border: 1px solid var(--warning-color-light);
+}
+
+.button.primary {
+  background-color: var(--primary-color);
+  border: 1px solid var(--primary-color);
+  color: white;
+}
+.button.primary:hover {
+  background-color: var(--primary-color-light);
+  border: 1px solid var(--primary-color-light);
+}
+
+.button.black {
+  background-color: var(--body-color);
+  border: 1px solid var(--body-color);
+  color: var(--body-background);
+}
+.button.black:hover {
+  background-color: var(--body-color);
+  border: 1px solid var(--body-color);
+}
+
+.button.plain-text {
+  padding: 0;
+  font-weight: inherit;
+  font-size: inherit;
+  font-family: inherit;
+  background-color: transparent;
+  height: auto;
+}
+
+.button.text {
+  padding: 0;
+  font-weight: 500;
+  background-color: transparent;
+  height: auto;
+}
+
+.button.large {
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.button-group {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}

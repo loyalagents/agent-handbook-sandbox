@@ -1,0 +1,26 @@
+.grid {
+  flex: 1;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem;
+}
+
+.grid-columns-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-columns-3 {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.grid-columns-4 {
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-5 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.grid-columns-6 {
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+}

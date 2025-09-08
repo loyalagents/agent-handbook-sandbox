@@ -1,0 +1,95 @@
+.select-trigger {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius-small);
+  padding-left: 0.75rem;
+  padding-right: 0.5rem;
+  font-size: var(--font-size-smaller);
+  line-height: 1;
+  height: 1.75rem;
+  gap: 5px;
+  color: var(--body-color);
+  background-color: var(--body-background);
+  border: 1px solid var(--border-color-light);
+  outline: none;
+}
+.select-trigger:focus {
+  border: 1px solid var(--primary-color);
+}
+
+.select-trigger[data-placeholder] {
+  color: var(--body-color-light);
+}
+
+.select-icon {
+  color: var(--body-color-light);
+  padding-left: 0.25rem;
+}
+
+.select-content {
+  font-size: var(--font-size-small);
+  overflow: hidden;
+  background-color: var(--body-background);
+  border-radius: var(--border-radius-small);
+  box-shadow: 0px 10px 38px -10px rgba(22, 23, 24, 0.35),
+    0px 10px 20px -15px rgba(22, 23, 24, 0.2);
+}
+
+.select-viewport {
+  padding: 0.25rem;
+}
+
+.select-item {
+  line-height: 1;
+  color: var(--body-color);
+  border-radius: 3px;
+  display: flex;
+  align-items: center;
+  height: 25px;
+  padding: 0 35px 0 25px;
+  position: relative;
+  user-select: none;
+}
+.select-item[data-disabled] {
+  color: var(--body-color-light);
+  pointer-events: none;
+}
+.select-item[data-highlighted] {
+  outline: none;
+  color: var(--body-color);
+  background-color: var(--body-background-light);
+}
+
+.select-label {
+  padding: 0 25px;
+  font-size: 12px;
+  line-height: 25px;
+  color: var(--body-color-light);
+}
+
+.select-separator {
+  height: 1px;
+  background-color: var(--border-color-light);
+  margin: 0.25rem;
+}
+
+.select-item-indicator {
+  position: absolute;
+  left: 0;
+  width: 25px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.select-scroll-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 25px;
+  background-color: white;
+  color: var(--body-color-light);
+  cursor: default;
+}

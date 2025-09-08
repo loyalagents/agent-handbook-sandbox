@@ -1,0 +1,17 @@
+.scenarios-page {
+  padding: 0;
+}
+
+.header {
+  height: 4rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+
+.container {
+  padding: 2rem;
+  padding-top: 0;
+  min-height: calc(100vh - 4rem);
+}

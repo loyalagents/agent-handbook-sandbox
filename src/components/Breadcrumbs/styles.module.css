@@ -1,0 +1,44 @@
+.breadcrumbs {
+  margin-bottom: 0;
+}
+
+.breadcrumb-list {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.breadcrumb-item {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+
+.breadcrumb-link {
+  /* text-decoration: none; */
+}
+
+.breadcrumb-link:hover {
+  text-decoration: underline;
+}
+
+.breadcrumb-text {
+ 
+}
+
+.current-item {
+  font-weight: 600;
+}
+
+.hide-current-item {
+  visibility: hidden;
+}
+
+.separator {
+  margin: 0 0.5rem;
+  font-weight: 400;
+  color: var(--body-color);
+
+}
