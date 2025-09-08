@@ -1,6 +1,4 @@
-import { formatSessionStart, slugify } from "@/shared/utils";
-
-import { ModelMessage } from "ai";
+import { Message } from "@/shared/models";
 import fs from "fs";
 import uid from "tiny-uid";
 
@@ -8,14 +6,14 @@ export interface SessionJudgment {
 	id: string;
 	traceId: string;
 	timestamp: Date;
-	messages: ModelMessage[];
+	messages: Message[];
 }
 
 export interface SessionTrace {
 	id: string;
 	parentId: string | null;
 	timestamp: Date;
-	messages: ModelMessage[];
+	messages: Message[];
 }
 
 export interface SessionData {
@@ -61,7 +59,7 @@ export class Session {
 	}
 
 	addTrace = (
-		messages: ModelMessage[] = [],
+		messages: Message[] = [],
 		parentId: string | null = null
 	) => {
 		const trace: SessionTrace = {
@@ -77,7 +75,7 @@ export class Session {
 		return trace;
 	};
 
-	addMessagesToTrace = (traceId: string, messages: ModelMessage[]) => {
+	addMessagesToTrace = (traceId: string, messages: Message[]) => {
 		this.traces[traceId].messages.push(...messages);
 	};
 
@@ -85,7 +83,7 @@ export class Session {
 		traceId: string,
 		roles: string[] = ["user", "assistant"]
 	) => {
-		let messages: ModelMessage[] = [];
+		let messages: Message[] = [];
 		
 		// Find the index of the provided traceId
 		const traceIndex = this.traceIds.indexOf(traceId);
@@ -100,7 +98,7 @@ export class Session {
 			messages.push(...this.traces[currentTraceId].messages);
 		}
 		
-		messages = messages.filter((message: ModelMessage) =>
+		messages = messages.filter((message: Message) =>
 			roles.includes(message.role)
 		);
 		return messages;
@@ -109,17 +107,17 @@ export class Session {
 	getAllMessagesFromTraces = (
 		roles: string[] = ["user", "assistant", "tool", "system"]
 	) => {
-		let messages: ModelMessage[] = [];
+		let messages: Message[] = [];
 		for (const traceId of this.traceIds) {
 			messages.push(...this.traces[traceId].messages);
 		}
-		messages = messages.filter((message: ModelMessage) =>
+		messages = messages.filter((message: Message) =>
 			roles.includes(message.role)
 		);
 		return messages;
 	};
 
-	addJudgment = (traceId: string, messages: ModelMessage[] = []) => {
+	addJudgment = (traceId: string, messages: Message[] = []) => {
 		const judgment: SessionJudgment = {
 			id: uid(),
 			traceId,
@@ -133,7 +131,7 @@ export class Session {
 		return judgment;
 	};
 
-	addMessagesToJudgment = (judgmentId: string, messages: ModelMessage[]) => {
+	addMessagesToJudgment = (judgmentId: string, messages: Message[]) => {
 		this.judgments[judgmentId].messages.push(...messages);
 	};
 
@@ -141,7 +139,7 @@ export class Session {
 		judgmentId: string | null,
 		roles: string[] = ["user", "assistant", "tool"]
 	) => {
-		let messages: ModelMessage[] = [];
+		let messages: Message[] = [];
 		if (judgmentId) {
 			messages.push(...this.judgments[judgmentId].messages);
 		} else {
@@ -149,7 +147,7 @@ export class Session {
 				messages.push(...this.judgments[judgmentId].messages);
 			}
 		}
-		messages = messages.filter((message: ModelMessage) =>
+		messages = messages.filter((message: Message) =>
 			roles.includes(message.role)
 		);
 		return messages;

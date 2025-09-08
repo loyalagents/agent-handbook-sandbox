@@ -2,7 +2,7 @@
   "id": "default",
   "name": "Default",
   "slug": "default",
-  "traceIds": ["t1", "t2", "t3", "t4", "t5"],
+  "traceIds": ["t1", "t2", "t3", "t4"],
   "traces": {
     "t1": {
       "id": "t1",
@@ -11,7 +11,7 @@
       "messages": [
         {
           "role": "assistant",
-          "content": "Hi! I'm Robot, an AI agent that can help you assess your real estate investments, close property deals, negotiate with vendors, etc.  How can I help you?"
+          "content": "Hi Bob! I'm Robot, an AI agent that can help you assess your real estate investments, close property deals, negotiate with vendors, etc.  How can I help you?"
         }
       ]
     },
@@ -110,18 +110,6 @@
     },
     "t4": {
       "id": "t4",
-      "parentId": null,
-      "timestamp": "2025-08-20T10:16:00.000Z",
-      "messages": [
-        {
-          "role": "judge",
-		  "judgmentId": "j2",
-          "content": "Whoa!"
-        }
-      ]
-    },
-    "t5": {
-      "id": "t5",
       "parentId": null,
       "timestamp": "2025-08-20T10:16:00.000Z",
       "messages": [
